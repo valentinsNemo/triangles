@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Visi par trijstūriem</title>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Sākums</a></li>
+        <li><a href="formulas.html">Formulas</a></li>
+        <li><a href="tables.html">Leņķu aprēķinātājs:</a></li>
+        <li><a href="images.html">Atteloti piemeri</a></li>
+		<li><a href="references.html">Atsauces</a></li>
+    </ul>
+</nav>
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Leņķa kalkulators</title>
+    <script>
+        function calculateTrigValues() {
+            var angle = parseFloat(document.getElementById("angleInput").value);
+            
+            var radians = angle * (Math.PI / 180); // Pārveidojam radiānos
+            
+            var cosValue = Math.cos(radians).toFixed(4);
+            var sinValue = Math.sin(radians).toFixed(4);
+            var tanValue = Math.tan(radians).toFixed(4);
+            
+            document.getElementById("cosOutput").innerHTML = "Kosinuss: " + cosValue;
+            document.getElementById("sinOutput").innerHTML = "Sinuss: " + sinValue;
+            document.getElementById("tanOutput").innerHTML = "Tangens: " + tanValue;
+        }
+    </script>
+</head>
+<body>
+    <h1>Leņķa kalkulators</h1>
+    
+    <label for="angleInput">Ievadiet leņķi grādos:</label>
+    <input type="number" id="angleInput" value="0">
+    <button onclick="calculateTrigValues()">Aprēķināt</button>
+    
+    <p id="cosOutput">Kosinuss: </p>
+    <p id="sinOutput">Sinuss: </p>
+    <p id="tanOutput">Tangens: </p>
+	<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Sin, Cos, Tg funkcijas</title>
+</head>
+<body>
+    <h1>Sin, Cos, Tg funkcijas</h1>
+    
+    <p>Sinuss (sin), kosinuss (cos) un tangens (tg) ir matemātiskas funkcijas, kas attiecas uz leņķa vērtību attiecību trijstūrī.</p>
+    
+    <h2>Sinuss (sin)</h2>
+    <p>Sinuss no leņķa ir attiecība starp pretējo malu un hipotenuzi taisnleņķa trijstūrī.</p>
+    <p>sin(A) = pretējā mala / hipotenuze</p>
+    
+    <h2>Kosinuss (cos)</h2>
+    <p>Kosinuss no leņķa ir attiecība starp blakus malu un hipotenuzi taisnleņķa trijstūrī.</p>
+    <p>cos(A) = blakus mala / hipotenuze</p>
+    
+    <h2>Tangens (tg)</h2>
+    <p>Tangens no leņķa ir attiecība starp pretējo un blakus malu taisnleņķa trijstūrī.</p>
+    <p>tg(A) = pretējā mala / blakus mala</p>
+    
+    <p>Šīs funkcijas tiek izmantotas, lai aprēķinātu leņķu vērtības un to attiecības dažādos trijstūros un matemātiskos aprēķinos.</p>
+	<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktiskie piemēri: sin, cos, tg</title>
+</head>
+<body>
+    <h1>Praktiskie piemēri: sin, cos, tg</h1>
+    
+    <h2>Sinus (sin)</h2>
+    <p>sin(30°) = <strong>0,5</strong></p>
+    <p>Sinus no leņķa 30 grādiem ir 0,5. Tas nozīmē, ka, ja mums ir taisnleņķa trijstūris ar leņķi 30 grādi un pretējo malu garumu 1, pretējā mala būs 0,5.</p>
+    
+    <h2>Kosinuss (cos)</h2>
+    <p>cos(60°) = <strong>0,5</strong></p>
+    <p>Kosinuss no leņķa 60 grādiem ir 0,5. Ja mums ir taisnleņķa trijstūris ar leņķi 60 grādi un blakus malu garumu 1, blakus mala būs 0,5.</p>
+    
+    <h2>Tangens (tg)</h2>
+    <p>tg(45°) = <strong>1</strong></p>
+    <p>Tangens no leņķa 45 grādiem ir 1. Tas nozīmē, ka, ja mums ir taisnleņķa trijstūris ar leņķi 45 grādi, pretējā mala un blakus mala būs vienādas.</p>
+</body>
+</html>
+
+</body>
+</html>
+
+</body>
+</html>
